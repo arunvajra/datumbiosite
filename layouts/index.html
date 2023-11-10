@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site Name</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/images/datum_bio_logo.png" alt="Your Logo" class="logo">
+    </header>
+    <h1 class="main-heading">Apollo Dev Hub</h1>
+    <p class="subtitle">Build on top of connected health data with ease</p>
+    
+    <div class="full-width-container"></div>
+    <div class="launching-soon-banner">Launching Soon!</div>
+    <div class="full-width-container">
+
+    <h2 class="offers-title"></h2>     
+    <div class="tagline">
+        Data Exploration
+        <p class="tagline-description">Explore connected datasets with simplicity on Jupyter Hub.</p>
+    </div>
+    <div class="tagline">
+        Flexible Integration
+        <p class="tagline-description">Call our API to get direct data access to your applications.</p>
+    </div>
+    <div class="tagline">
+        Excellent Documentation
+        <p class="tagline-description">Easily understand our datasets and biomedical concepts.</p>
+    </div>
+</div>
+
+
+<a href="javascript:void(0);" class="sign-up-btn" onclick="openForm()">Get Pre-Launch Access!</a>
+
+<!-- Pop-up Form Box -->
+<div id="popup-form" class="popup-container" style="display:none;">
+    <div class="popup-content">
+        <span class="close-btn" onclick="document.getElementById('popup-form').style.display='none'">&times;</span>
+        <form id="signup-form" action="https://formspree.io/f/xvojyjez" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <textarea id="message" name="message" class="textarea-message" rows="4" placeholder="Your message (optional)"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+
+
+<footer class="site-footer">
+    <p>&copy; 2023 datum.md Inc. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+    function openForm() {
+        document.getElementById('popup-form').style.display = 'block'; // or 'flex'
+    }
+
+    // Add an event listener to the form
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Submit the form via POST
+            this.submit();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
