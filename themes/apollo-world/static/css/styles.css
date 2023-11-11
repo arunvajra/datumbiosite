@@ -271,12 +271,13 @@ header {
     .subtitle {
         font-size: 18px; /* Adjusted font size */
         top: 32%; /* Adjusted top position */
-        white-space: nowrap; /* Prevents the text from wrapping */
+         /* Prevents the text from wrapping */
         }
 
     .sign-up-btn {
         font-size: 18px;
         top: 40%;
+        white-space: nowrap;
     }
 
     .tagline {
