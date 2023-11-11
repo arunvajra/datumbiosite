@@ -69,6 +69,8 @@ header {
 
 .tagline {
     display: flex;
+    font-size: 22px;
+    font-weight: 700;
     flex-direction: column; /* Stack heading and paragraph vertically */
     align-items: center; /* Center content */
     text-align: center;
@@ -84,7 +86,7 @@ header {
 
 .tagline-description {
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400; /* Regular font weight */
     color: #000000; /* Text color */
     margin-top: 10px; /* Space between tagline and its description */
@@ -249,6 +251,7 @@ header {
 
     .tagline {
         font-size: 16px;
+        font-weight: 700;
     }
 
     .tagline-description {
@@ -291,6 +294,7 @@ header {
 
     .tagline {
         font-size: 16px; /* Adjusted font size */
+        font-weight: 700;
     }
 
     .tagline-description {
