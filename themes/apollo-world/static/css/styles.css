@@ -18,8 +18,11 @@ header {
 }
 
 .logo {
-    max-width: 100%;
-    height: auto;
+    max-width: 200px; /* Adjusted max-width for a more reasonable default size */
+    height: auto; /* Maintain aspect ratio */
+    /* Optionally, you could also add: */
+    display: block; /* If needed, to prevent inline default behaviors */
+    /* Center the logo if desired */
 }
 
 /* Responsive Typography */
