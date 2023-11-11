@@ -265,6 +265,7 @@ header {
 
     .main-heading {
         font-size: 32px; /* Adjusted font size */
+        white-space: nowrap;
     }
 
     .subtitle {
@@ -285,4 +286,10 @@ header {
     .tagline-description {
         font-size: 15px; /* Adjusted font size */
     }
+
+    .full-width-container {
+    background-color: #F9F7F1; /* Container color */
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 50%; 
 }
