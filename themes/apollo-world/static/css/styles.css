@@ -205,7 +205,7 @@ header {
 }
 
 /* Media Query for Specific Mobile Dimension (500px and smaller) */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 720px) {
     .logo {
         height: 50%; /* Adjusted height */
         width: 45%; /* Adjusted width */
@@ -223,7 +223,10 @@ header {
     .subtitle {
         font-size: 18px; /* Adjusted font size */
         top: 32%; /* Adjusted top position */
-    }
+        white-space: nowrap; /* Prevents the text from wrapping */
+        overflow: hidden; /* Optional: Hide overflow */
+        text-overflow: ellipsis; 
+        }
 
     .sign-up-btn {
         font-size: 18px;
