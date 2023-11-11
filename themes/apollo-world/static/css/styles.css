@@ -204,6 +204,53 @@ header {
     font-size: 14px; /* Adjust font size as needed */
 }
 
+
+@media only screen and (max-height: 850px) {
+    body {
+        /* Allow scrolling for smaller heights */
+        overflow-y: auto;
+        min-height: 850px; /* Maintain a minimum height */
+    }
+
+    /* Keep the sizes and positions of elements fixed */
+    .logo {
+        height: 50%;
+        width: 45%;
+    }
+
+    .launching-soon-banner {
+        font-size: 14px;
+        top: 30px;
+    }
+
+    .main-heading {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        top: 32%;
+        white-space: nowrap;
+    }
+
+    .sign-up-btn {
+        font-size: 18px;
+        top: 40%;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .tagline-description {
+        font-size: 15px;
+    }
+
+    /* Add additional styles to maintain the layout */
+}
+
+
+
 /* Media Query for Specific Mobile Dimension (500px and smaller) */
 @media only screen and (max-width: 720px) {
     .logo {
@@ -224,8 +271,6 @@ header {
         font-size: 18px; /* Adjusted font size */
         top: 32%; /* Adjusted top position */
         white-space: nowrap; /* Prevents the text from wrapping */
-        overflow: hidden; /* Optional: Hide overflow */
-        text-overflow: ellipsis; 
         }
 
     .sign-up-btn {
