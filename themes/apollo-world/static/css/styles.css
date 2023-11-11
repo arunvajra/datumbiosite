@@ -56,13 +56,30 @@ header {
     left: 50%; /* Center the text horizontally */
 }
 
+.full-width-container {
+    background-color: #F9F7F1;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: space-around; /* Evenly distribute space around items */
+    position: relative;
+    top: 54%;
+}
+
 .tagline {
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    align-items: center; /* Center content */
+    text-align: center;
+    margin: 20px 0; /* Add some vertical space between each tagline block */
+}
+
+.tagline h2 {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     font-weight: 700; /* Bold */
     color: #000000; /* Text color */
-    text-align: center;
-    margin-top: -50px;
 }
 
 .tagline-description {
@@ -70,9 +87,9 @@ header {
     font-size: 18px;
     font-weight: 400; /* Regular font weight */
     color: #000000; /* Text color */
-    text-align: center;
-    margin: 20px 0; /* Space above and below each description */
+    margin-top: 10px; /* Space between tagline and its description */
 }
+
 
 .offers-title {
     font-family: 'Inter', sans-serif;
@@ -88,15 +105,7 @@ header {
     margin-left: 6px;
 }
 
-/* Layout Adjustments */
-.full-width-container {
-    background-color: #F9F7F1;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 /* Button Styles */
 .sign-up-btn {
@@ -294,3 +303,5 @@ header {
     position: absolute;
     top: 50%; 
 }
+
+
