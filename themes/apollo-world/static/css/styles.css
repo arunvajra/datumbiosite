@@ -34,19 +34,55 @@ header {
 }
 
 .main-heading {
-    font-size: 4vw;
+    font-size: 40px;
+
+    font-weight: 700;
+    position: absolute;
+    top: 22%;
+    left: 50%; /* Add this line */
+    transform: translate(-50%, -50%); /
 }
 
-.subtitle,
-.tagline,
+.subtitle {
+    font-size: 22px; /* Set font size to 20px */
+    font-weight: 400; /* Regular font weight */
+    color: #OD4F1B; /* Set the font color */
+    position: absolute;
+    top: 29%; /* Adjust the position to be just below the main heading */
+    transform: translate(-50%, -50%);
+    left: 50%; /* Center the text horizontally */
+}
+
+.tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 700; /* Bold */
+    color: #000000; /* Text color */
+    text-align: center;
+    margin-top: -50px;
+}
+
 .tagline-description {
-    font-size: 2vw;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400; /* Regular font weight */
+    color: #000000; /* Text color */
+    text-align: center;
+    margin: 20px 0; /* Space above and below each description */
 }
 
-.offers-title,
-.sign-up-btn,
-.site-footer p {
-    font-size: 2.5vw;
+.offers-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: 700; /* Bold */
+    color: #000000; /* Text color */
+    text-align: center;
+    position: absolute;
+    top: 10%; /* Adjust this value to position the title right above the taglines */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensure it spans the full width of its container */
+    margin-left: 6px;
 }
 
 /* Layout Adjustments */
@@ -58,135 +94,6 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
-/* Button Styles */
-.sign-up-btn {
-    padding: 10px 20px;
-    border-radius: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-/* Media Queries for Responsive Design */
-@media only screen and (max-width: 768px) {
-    .main-heading {
-        font-size: 6vw;
-    }
-
-    .subtitle,
-    .tagline,
-    .tagline-description {
-        font-size: 4vw;
-    }
-
-    .offers-title,
-    .sign-up-btn,
-    .site-footer p {
-        font-size: 5vw;
-    }
-
-    .sign-up-btn {
-        padding: 8px 16px;
-    }
-
-    .full-width-container {
-        flex-direction: column;
-    }
-
-    header {
-        position: static;
-    }
-
-    .logo {
-        height: 80px; /* Smaller logo for mobile */
-    }
-
-    .textarea-message {
-        width: 90%; /* Smaller width for mobile */
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .main-heading {
-        font-size: 8vw;
-    }
-
-    .subtitle,
-    .tagline,
-    .tagline-description {
-        font-size: 5vw;
-    }
-
-    .offers-title,
-    .sign-up-btn,
-    .site-footer p {
-        font-size: 6vw;
-    }
-
-    .popup-content {
-        width: 90%; /* Adjust width for mobile */
-    }
-}
-
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px; /* Adjust padding as needed */
-}
-
-.logo {
-    height: 100px; /* Adjust size as needed */
-    width: auto;
-}
-
-body {
-    background-color: #FFFEFA;
-    font-family: 'Montserrat', sans-serif;
-    color: #00A023;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    
-}
-
-.main-heading {
-    font-size: 40px;
-    font-weight: 700; 
-    position: absolute;
-    top: 22%;
-    transform: translateY(-50%);
-}
-
-/* Add this class for the new subtitle */
-.subtitle {
-    font-size: 22px; /* Set font size to 20px */
-    font-weight: 400; /* Regular font weight */
-    color: #OD4F1B; /* Set the font color */
-    position: absolute;
-    top: 29%; /* Adjust the position to be just below the main heading */
-    transform: translate(-50%, -50%);
-    left: 50%; /* Center the text horizontally */
-}
-
-/* Style for the optional message textarea */
-.textarea-message {
-    width: 98%; /* Full width */
-    padding: 10px;
-    margin-top: 10px; /* Space from the above element */
-    margin-bottom: 20px; /* Space before the submit button */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 4px; /* Slightly rounded borders */
-    font-family: 'Inter', sans-serif; /* Inter font to match other inputs */
-    font-size: 16px; /* Match the font size of the other input fields */
-    line-height: 1.5; /* Space between lines */
-    resize: vertical; /* Allow only vertical resizing */
-}
-
 
 /* Button Styles */
 .sign-up-btn {
@@ -226,40 +133,6 @@ body {
     align-items: center; /* This will center them vertically */ 
 }
 
-.offers-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 24px; /* Adjust the size as needed */
-    font-weight: 700; /* Bold */
-    color: #000000; /* Text color */
-    text-align: center;
-    position: absolute;
-    top: 10%; /* Adjust this value to position the title right above the taglines */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%; /* Ensure it spans the full width of its container */
-    margin-left: 6px;
-}
-
-
-.tagline {
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    font-weight: 700; /* Bold */
-    color: #000000; /* Text color */
-    text-align: center;
-    margin-top: -50px;
-}
-
-.tagline-description {
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
-    font-weight: 400; /* Regular font weight */
-    color: #000000; /* Text color */
-    text-align: center;
-    margin: 20px 0; /* Space above and below each description */
-}
-
-
 /* Launching Soon Banner Styles */
 .launching-soon-banner {
     font-family: 'Montserrat', sans-serif;
@@ -270,7 +143,7 @@ body {
     padding: 8px 30px; /* Padding inside the banner */
     border-radius: 14px; /* Curvature of the banner */
     position: fixed; /* Fixed position */
-    top: 45px; /* Distance from the top */
+    top: 42px; /* Distance from the top */
     right: -20px; /* Adjust right position to hide a quarter of the banner */
     transform: rotate(0deg); /* Rotate the banner to create the popping effect */
     box-shadow: -2px 2px 5px rgba(0,0,0,0.2); /* Shadow for depth */
@@ -304,13 +177,11 @@ body {
     text-align: center;
 }
 
-
 .close-btn {
     float: right;
     font-size: 30px;
     cursor: pointer;
 }
-
 
 .site-footer {
     background-color: #24543D; /* Footer background color */
@@ -330,4 +201,37 @@ body {
     font-size: 14px; /* Adjust font size as needed */
 }
 
-  
+/* Media Query for Specific Mobile Dimension (500px and smaller) */
+@media only screen and (max-width: 500px) {
+    .logo {
+        height: 50%; /* Adjusted height */
+        width: 45%; /* Adjusted width */
+    }
+
+    .launching-soon-banner {
+        font-size: 14px; /* Adjusted font size */
+        top: 30px; /* Adjusted top position */
+    }
+
+    .main-heading {
+        font-size: 32px; /* Adjusted font size */
+    }
+
+    .subtitle {
+        font-size: 18px; /* Adjusted font size */
+        top: 32%; /* Adjusted top position */
+    }
+
+    .sign-up-btn {
+        font-size: 18px;
+        top: 40%;
+    }
+
+    .tagline {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .tagline-description {
+        font-size: 15px; /* Adjusted font size */
+    }
+}
